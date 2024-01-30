@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: test
+    database: DEMO_DB
+    schema: STG
+    tables:
+      - name: Store_2023
+      - name: Store_Sales_2023
