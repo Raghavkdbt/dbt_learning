@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: ecom
+    database: RAW
+    schema: jaffle_shop
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: customers
+        description: One record per person who has purchased one or more items
+      - name: orders
+        description: One record per order (consisting of one or more order items)
+        freshness:
+          warn_after:
+            count: 24
+            period: hour
+        loaded_at_field: order_date
