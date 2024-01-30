@@ -2,6 +2,6 @@
 
 with store_Sales_tbl_2023 as
 (
-select SS_STORE_SK,SS_QUANTITY,SS_SALES_PRICE,SS_NET_PROFIT  from demo_db.public.Store_Sales_2023
+select SS_STORE_SK,SS_QUANTITY,SS_SALES_PRICE,SS_NET_PROFIT  from {{ source('test','Store_Sales_2023') }}
 )
 select * from store_Sales_tbl_2023
