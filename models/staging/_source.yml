@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: ecom
+    database: RAW
+    schema: jaffle_shop
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: customers
+        description: customer information
+      - name: orders
+        description: One record per order (consisting of one or more order items)
+

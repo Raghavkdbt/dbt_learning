@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: source
+    database: DEMO_DB
+    schema: STG
+    tables:
+      - name: Employee
+    freshness: 
+          warn_after: {count: 1, period: minute}
+          error_after: {count: 30, period: minute}
+    loaded_at_field: Loaded_DT
