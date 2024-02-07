@@ -7,7 +7,7 @@ sources:
     description: E-commerce data for the Jaffle Shop
     tables:
       - name: customers
-        description: One record per person who has purchased one or more items
+        description: customer information
       - name: orders
         description: One record per order (consisting of one or more order items)
 
